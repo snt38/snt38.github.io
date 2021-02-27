@@ -13,7 +13,7 @@
   align-items: center;
 }
 #light {
-  background: #e8e8e8;
+  background: #c2bebe;
 }
 #dark {
   background: #131313;
@@ -24,8 +24,16 @@
   align-items: flex-end;
   width: 600px;
   margin: 0 auto;
-  background: #fff;
   border-radius: 10px;
+}
+
+#lightback {
+  background-image: url("https://static.wikia.nocookie.net/starwars/images/d/da/Resistance_Base.jpg/revision/latest/scale-to-width-down/500?cb=20160402062251");
+}
+
+#darkback{
+  background-image: url("https://static.wikia.nocookie.net/battlefront/images/4/4f/Starkiller_Base_Interior_Andrew_Hamilton.jpg/revision/latest/scale-to-width-down/1000?cb=20180310123839");
+  background-position: center;
 }
 .person {
   width: 196px;
@@ -361,6 +369,24 @@
   animation-direction: normal;
   animation-iteration-count: infinite;
   transform-origin: left bottom;
+}
+#rey .lightsaber2 {
+  position: absolute;
+  bottom: -30px;
+  right: 30%;
+  width: 10px;
+  height: 0;
+  background: #f7e80f;
+  z-index: 10;
+  border-radius: 4px 4px 0 0;
+  transform: rotate(330deg);
+  animation-name: saber;
+  animation-duration: 6s;
+  animation-timing-function: linear;
+  animation-delay: 1s;
+  animation-direction: normal;
+  animation-iteration-count: infinite;
+  transform-origin: right bottom;
 }
 @keyframes saber {
   0% {
@@ -719,6 +745,8 @@
   width: 100%;
   height: 10px;
 }
+
+
 /* Phasma */
 #phasma .body {
   position: absolute;
